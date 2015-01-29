@@ -17,7 +17,7 @@ body {
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #f0f0f0; 
+	background: #fff; 
 	margin: 0; 
 	padding: 0;
 	}
@@ -28,8 +28,9 @@ p {
 h3 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
-	margin-bottom: 0; 
+	margin-bottom: 20px; 
 	color: #7D775C;
+  font-size:26px;
 	}
 a:link { 
 	font-weight: bold; 
@@ -60,16 +61,18 @@ abbr {
 
 .intro { 
 	min-width: 470px;
-	width: 25%;
-  float:left;
+	width: 100%;
+  text-align:center;
+  background: url(https://caracaschronicles.files.wordpress.com/2011/02/short-link-chain-din-766.png) no-repeat center;
 	}
 
 header h1 { 
 	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
+	margin-top: 4px;
 	display: block;
-	width: 219px;
-	/*height: 87px;*/
+  font-size:36px;
+	/*width: 219px;
+	height: 87px;*/
 	/*float: left;*/
 /*
 	text-indent: 100%;
@@ -77,6 +80,8 @@ header h1 {
 	overflow: hidden;*/
 	}
 header h2 { 
+  font-size:20px;
+  margin-top:-55px;
 	background: transparent url(h2.gif) no-repeat top left; 
 	/*margin-top: 58px;*/ 
 	/*margin-bottom: 40px; 
@@ -89,36 +94,92 @@ header h2 {
 	overflow: hidden;*/
 	}
 header {
-	padding-top: 20px;
-	height: 87px;
+  color:darkgray;
+  margin:20px auto 40px auto;
+	height: 100px;
+  background-color: #333;
+  border-radius: 20px;
+  padding-top:10px;
+  font-family:fantasy;
+  width:30%;
+  -webkit-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
 }
 
 .summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
-	width: 300px;; 
-	/*float: left;*/
+	width: 50%; 
+	margin:40px auto;
+  background-color: #333;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
-	text-align: left;
+	text-align: center;
 	}
+
+  .summary p:first-child {
+    padding: 25px 10px 0px 10px;
+  }
+
+.summary p:last-child {
+  padding-bottom:20px;
+}
 
 .preamble {
 	clear: right; 
-	padding: 0px 10px 0 10px;
+	padding: 10px;
+  text-align:center;
+  background-color:#333;
+  width:80%;
+  border-radius:20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  margin: 40px auto;
+  -webkit-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
 	}
+
+.preamble h3 {
+  color:darkgray;
+}
+.preamble p {
+  text-align:center;
+}
 .supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
+  padding: 40px 10px;
+  margin-bottom: 40px;
   float: left;
-  width: 68%;
-  margin-left: 30px;
+  width: 100%;
+  margin-top: -40px;
+}
+
+.supporting div:first-child {
+  margin-left:75px;
 }
 
 footer { 
 	text-align: center; 
-	}
+  clear:both;
+  background:#333;
+  margin:30px auto;
+  width:80%;
+  border-radius:20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  padding:10px;
+}
 footer a:link, footer a:visited { 
 	margin-right: 20px; 
 	}
@@ -126,15 +187,15 @@ footer a:link, footer a:visited {
 .sidebar {
   margin-left: 110px;
   position: absolute;
-  top: 350px;
-  left: 0;
+  top: 1050px;
+  left: 83px;
+  padding:0px 0px 20px 20px;
+  background-color:aliceblue;
 	}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
 	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
+	padding: 10px;  
 	}
 .sidebar h3.select { 
 	background: transparent url(h3.gif) no-repeat top left; 
@@ -196,4 +257,58 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+ .explanation {
+  float:left;
+  width:20%;
+  margin-right:12px;
+  background-color:ghostwhite;
+  padding: 0 15px;
+  margin-left: 45px;
+  margin-bottom:20px;
+ }
 
+ .participation {
+  float:left;
+  width:20%;
+  margin-right:12px;
+  background-color:ghostwhite;
+  padding: 0 15px;
+  margin-bottom:20px;
+ }
+
+ .benefits {
+  float:left;
+  width:20%;
+  margin-right:12px;
+  background-color:ghostwhite;
+  padding: 0 15px;
+  margin-bottom:20px;
+ }
+
+ .requirements {
+  float:left;
+  width:20%;
+  background-color:ghostwhite;
+  padding: 0 15px;
+  margin-bottom:20px;
+ }
+
+ .design-selection {
+  margin-top: -20px;
+  float: left;
+  width: 225px;
+  margin-right: 60px;
+ }
+
+ .design-archives {
+  width: 225px;
+  float: left;
+  vertical-align: top;
+  margin-top: -33px;
+ }
+
+ .zen-resources {
+  float: left;
+  margin-top: -33px;
+  width:225px;
+ }
