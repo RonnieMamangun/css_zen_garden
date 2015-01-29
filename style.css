@@ -159,11 +159,13 @@ header {
   margin-bottom: 40px;
   float: left;
   width: 100%;
+  text-align:center;
   margin-top: -40px;
 }
 
-.supporting div:first-child {
-  margin-left:75px;
+.supporting div {
+ /* margin-left:85px;*/
+  text-align:left;
 }
 
 footer { 
@@ -185,17 +187,30 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar {
-  margin-left: 110px;
-  position: absolute;
-  top: 1050px;
-  left: 83px;
-  padding:0px 0px 20px 20px;
-  background-color:aliceblue;
-	}
+marginn-left: 110px;
+position: relative;
+/*top: -390px;
+left: 83px;
+padding: 0px 0px 20px 20px;
+background-color: aliceblue;
+height: 195px;*/
+display: -webkit-box;
+width: 80%;
+margin:0 auto;
+background-color:gainsboro;
+top:-80px;
+  border-radius:20px;
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+  -moz-border-radius: 20px;
+   box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+ -moz-box-shadow: 10px 9px 50px 3px rgba(0,0,0,0.75);
+}
 .sidebar .wrapper { 
 	font: 10px verdana, sans-serif; 
 	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px;  
+	padding: 20px;
+  margin-top: -20px;
 	}
 .sidebar h3.select { 
 	background: transparent url(h3.gif) no-repeat top left; 
@@ -234,13 +249,16 @@ footer a:link, footer a:visited {
 	padding: 0;
 	}
 .sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
+line-height: 1.3em;
+background: transparent url(cr1.gif) no-repeat top center;
+display: inline-block;
+padding-top: 5px;
+margin-bottom: 5px;
+list-style-type: none;
+margin-right: 25px;
+text-align: justify;
+width: 225px;
+}
 .sidebar li a:link {
 	color: #988F5E;
 	}
@@ -258,7 +276,8 @@ footer a:link, footer a:visited {
 	height: 110px;
 	}
  .explanation {
-  float:left;
+  display:inline-block;
+  vertical-align:top;
   width:20%;
   margin-right:12px;
   background-color:ghostwhite;
@@ -268,7 +287,8 @@ footer a:link, footer a:visited {
  }
 
  .participation {
-  float:left;
+  display:inline-block;
+  vertical-align:top;
   width:20%;
   margin-right:12px;
   background-color:ghostwhite;
@@ -277,7 +297,8 @@ footer a:link, footer a:visited {
  }
 
  .benefits {
-  float:left;
+  display:inline-block;
+  vertical-align:top;
   width:20%;
   margin-right:12px;
   background-color:ghostwhite;
@@ -286,29 +307,10 @@ footer a:link, footer a:visited {
  }
 
  .requirements {
-  float:left;
+  display:inline-block;
+  vertical-align:top;
   width:20%;
   background-color:ghostwhite;
   padding: 0 15px;
   margin-bottom:20px;
- }
-
- .design-selection {
-  margin-top: -20px;
-  float: left;
-  width: 225px;
-  margin-right: 60px;
- }
-
- .design-archives {
-  width: 225px;
-  float: left;
-  vertical-align: top;
-  margin-top: -33px;
- }
-
- .zen-resources {
-  float: left;
-  margin-top: -33px;
-  width:225px;
  }
